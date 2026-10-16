@@ -1,0 +1,75 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs
+.venv/
+env/
+venv/
+ENV/
+.python-version
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+logs/
+*.log
+*.pid
+*.seed
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Common data / outputs (do not commit large datasets or model checkpoints)
+data/
+datasets/
+results/
+output/
+experiments/
+checkpoints/
+models/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.onnx
+*.pb
+*.tflite
+*.pkl
+*.npz
+*.npy
+*.bin
+
+# Archives (if you want to avoid committing archives)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# Database
+*.sqlite3
+*.db
+
+# Media
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.wav
+*.mp3
+
+# Git LFS pointer files (if you start using LFS, .gitattributes is created)
+.gitattributes
