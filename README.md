@@ -5,6 +5,9 @@ ECRF is a repository of agents and related code for Emergent/experimental work. 
 ## Project overview
 ECRF contains agent implementations, experiments, and utilities used for emergent behavior research and evaluation.
 
+## Documentation
+See docs/ECRF-FOUNDATIONS.md for the Emergent Foundations and full definitions used by this project.
+
 ## Quick start
 1. Clone the repo:
    git clone git@github.com:As-droid-cell/ECRF.git
@@ -24,6 +27,7 @@ ECRF contains agent implementations, experiments, and utilities used for emergen
 - data/          — (large datasets should not be committed; see below)
 - scripts/       — helper scripts
 - experiments/   — experiment logs and outputs (do not commit large outputs)
+- docs/          — documentation (foundations, guides)
 - README.md
 - LICENSE
 
