@@ -5,6 +5,20 @@ ECRF is a repository of agents and related code for Emergent/experimental work. 
 ## Project overview
 ECRF contains agent implementations, experiments, and utilities used for emergent behavior research and evaluation.
 
+## Foundational principle
+Your foundational principle — that the measurement is the 360° and that the tools laid upon it are not the measurement itself — provides a useful test for every proposed addition.
+
+I would judge future changes by four questions:
+
+1. Does this addition describe a real geometric or observational quantity, or is it an interpretive convention?
+2. Does it preserve the independent identity of each reference frame?
+3. Can its calculation be reproduced from documented inputs and rules?
+4. Does it add information without silently changing existing results?
+
+If it passes those tests, it has a strong case for admission. If it does not, it can remain a hypothesis, a visualization, or an interpretive layer until its status is clearer.
+
+My strongest recommendation is therefore to keep the geometry-first base intact while making the architecture more explicit and the data more auditable. That will give you the freedom to make the changes you have planned without losing the work already done.
+
 ## Documentation
 See docs/ECRF-FOUNDATIONS.md for the Emergent Foundations and full definitions used by this project.
 
