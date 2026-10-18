@@ -1,57 +1,101 @@
-# Architecture notes — Planes, Depth Field, Observer, Wayeb
+# Architecture notes: planes, depth field, observer, and Wayeb
 
-Those questions can be answered together, provided we do not confuse a local plane with one of the three common sovereign planes.
+## 1. Reference geometry and local planes
+
+These questions can be answered together, provided we do not confuse a local plane with one of the three common sovereign planes.
 
 The first architecture gives the framework its common coordinate backbone. The second adds observer-specific geometry. A planetary orbital plane can be another plane in the extended model without becoming a replacement for the Galactic or Supergalactic reference.
 
-This distinction will become especially important when we later add each body's own rotation pole, orbital motion, and local horizon. The next step is to make these relationships queryable: Which objects are near multiple crossings? Which classifications persist across frames? Which apparent relationships disappear when precision, epoch, or viewpoint is corrected?
+This distinction becomes especially important when we later add each body's own rotation pole, orbital motion, and local horizon. The next step is to make these relationships queryable: which objects are near multiple crossings, which classifications persist across frames, and which apparent relationships disappear when precision, epoch, or viewpoint is corrected?
 
-Those questions turn a catalogue into a research instrument.
+Those are the kinds of questions that turn a catalogue into a research instrument.
 
-C. The Depth Field has the potential to become the framework's connective tissue
+The key rule is simple: a local plane may be a valid geometric reference within a standpoint, but it should not be mistaken for a sovereign frame. The sovereign planes remain the common backbone; local planes describe a specific observer or body context.
 
-Your Foundations document defines the three sovereign planes as walls of a larger field, with the Depth Field accounting for the spatial conditions they create together. The Layers document then develops terrain, depth, seat, octant, slab, cell, shell, and motion.
+## 2. The Depth Field as connective tissue
+
+The Foundations document defines the three sovereign planes as walls of a larger field, and the Depth Field as the spatial condition created by their combination. The Layers document then develops terrain, depth, seat, octant, slab, cell, shell, and motion.
 
 This is a more interesting architecture than simply overlaying three charts.
 
-The distinction is between a direction on a reference plane and a direction's relationship to several reference planes.
+The important distinction is between:
+- a direction lying on a reference plane, and
+- a direction's relationship to several reference planes at once.
 
-I would preserve that distinction rigorously. Depth is a derived geometric quantity under your definitions; it should not be confused with physical distance from Earth, radial distance from the Sun, or cosmological distance. Those can coexist as separate attributes, but they answer different questions. THE OBSERVER — EMERGENT · First: the observer's local geometry. The local plane, rotation pole, obliquity, local latitude, and house-orientation rules need a clear shared definition. Your extraction states that Pluto's 119.618° obliquity produces reversed houses on its local Sigma plane and the Supergalactic plane. That is a specific rule worth testing at the geometric level before we treat it as a settled general principle.
+I would preserve that distinction rigorously. Under these definitions, Depth is a derived geometric quantity. It should not be confused with physical distance from Earth, radial distance from the Sun, or cosmological distance. Those can coexist as separate attributes, but they answer different questions.
 
-Second: the distinction between measurements and framework-defined classifications. Coordinates and angular separations are different kinds of outputs from labels such as Watchers, Weave-Walkers, Gate-Keepers, or the alignment categories. Both may belong in EMERGENT, but their calculation rules and evidentiary status should remain distinguishable.
+In other words, depth describes a relational condition in the framework. It is not automatically a literal metric distance in the ordinary observational sense.
 
-Third: the provenance of each value. The extraction gives high-precision longitudes and lattice readings, but the pasted text does not include every formula, coordinate epoch, source, or intermediate calculation needed to reproduce them. That does not invalidate the results; it identifies what the complete documentation needs to supply.
+## 3. Observer geometry and the local standpoint
 
-One additional detail: the antipodal chamber separations summing to 180° are explicitly described as a consequence of construction. That is a useful internal consistency property, but it should be documented as such rather than presented as an independent discovery. This gives the local-plane system a nonuniform geometry. The intersections are not distributed as if all nine local planes were interchangeable.
+The observer's local geometry should be treated as a first-class component of the system.
 
-I would preserve that as a descriptive finding while auditing the underlying plane normals and angular-separation calculations. It may become useful for understanding how the framework's crossing population is distributed, without assigning a meaning to Sigma's distinctiveness in advance.
+This includes:
+- the local plane,
+- the rotation pole,
+- obliquity,
+- local latitude,
+- and house-orientation rules.
 
-How this connects to the Observer
+The extraction states that Pluto's 119.618° obliquity produces reversed houses on its local Sigma plane and the Supergalactic plane. That is a concrete geometric rule worth testing before we treat it as a settled general principle.
+
+The observer layer should therefore be separated from the sovereign frame layer. The local standpoint can carry meaningful geometry without redefining the sovereign structure of the model.
+
+## 4. Measurements, classifications, and provenance
+
+A second distinction is important: measurements and framework-defined classifications are not the same kind of thing.
+
+Coordinates and angular separations are measurements. Labels such as Watchers, Weave-Walkers, Gate-Keepers, or alignment categories are classifications. Both may belong in the framework, but their calculation rules and evidentiary status should remain distinct.
+
+Third, provenance matters. The extraction provides high-precision longitudes and lattice readings, but it does not include every formula, coordinate epoch, source, or intermediate calculation required to reproduce the values in full. That does not invalidate the results; it identifies what the complete documentation still needs to supply.
+
+One additional detail is worth preserving explicitly: the antipodal chamber separations summing to 180° are described as a consequence of construction. That is a useful internal consistency property, but it should be documented as such rather than presented as an independent discovery.
+
+## 5. Records, crossings, and queryable relationships
 
 The two documents now suggest three distinct kinds of record:
 
-- Plane — A reference geometry with a defined pole and orientation
-- Standpoint — An observer with a position, local geometry, and associated measurements
-- Crossing node — A directional intersection generated by a pair of planes
+- Plane — a reference geometry with a defined pole and orientation
+- Standpoint — an observer with a position, local geometry, and associated measurements
+- Crossing node — a directional intersection generated by a pair of planes
 
-The important thing is that these records are related, but not interchangeable. A standpoint does not become a crossing simply because it lies near one. A crossing does not become an observer because a coordinate system is centered on it. Each retains its own identity.
+These records are related, but not interchangeable.
 
-That separation could support a future query such as: Which crossing nodes are nearest to a given standpoint, and how does that relationship differ when measured against the three sovereign planes? It could also support comparisons of terrain classifications among crossings, without requiring an interpretive claim about what those classifications mean. Precision: arcminute presentation is not the same as arcminute computational accuracy. Preserve the underlying precision where available, especially when testing small offsets.
+A standpoint does not become a crossing simply because it lies near one. A crossing does not become an observer because a coordinate system is centered on it. Each retains its own identity.
+
+That separation supports useful future queries. For example:
+- which crossing nodes are nearest to a given standpoint,
+- how that relationship changes when measured against the three sovereign planes,
+- and how terrain or classification relationships differ across crossings without asserting a new interpretive meaning in advance.
+
+This also helps keep geometry and interpretation separate. A crossing can be structurally real without the surrounding classification system being conclusively interpreted.
+
+## 6. Precision and verification standards
+
+Arcminute presentation is not the same as arcminute computational accuracy. Preserve the underlying precision where available, especially when testing small offsets.
 
 These are verification targets, not conclusions that the supplied readings are wrong. The pasted reference file alone does not establish that every value has been independently reproduced.
 
-The larger consequence
+The framework should therefore treat the following as standard practice:
+- retain the original precision,
+- preserve the coordinate epoch,
+- document the generating rule,
+- and distinguish internal consistency from independent reproduction.
 
-Together, the three additions begin to form a more complete system:
+## 7. The larger consequence
+
+Together, the additions begin to form a more complete system:
 
 - The Observer supplies the standpoint.
 - The Orbital Clockwork supplies the temporal state.
 - The Node Crossing Map supplies the pairwise intersections.
 - The sovereign and local planes supply the reference geometry.
 
-That creates a route toward a multi-epoch, multi-standpoint geometry engine: one that can ask not only where a body is, but where it is within several distinct cycles, which plane relationships apply, and how those relationships evolve.
+That creates a path toward a multi-epoch, multi-standpoint geometry engine: one that can ask not only where a body is, but where it is within several distinct cycles, which plane relationships apply, and how those relationships evolve.
 
 I would register The Orbital Clockwork as a proposed temporal-state module, pending cross-system verification. Its cultural overlay remains removable, exactly as the document specifies; it should not be allowed to alter the underlying geometric readings.
+
+## 8. Wayeb structure and provenance
 
 The manuscript gives the Wayeb a distinctive internal architecture:
 
@@ -61,6 +105,12 @@ The manuscript gives the Wayeb a distinctive internal architecture:
 
 There is one count detail I would preserve explicitly: the manuscript's claimed total of sixteen is 2 poles + 8 crossing nodes + 6 chambers = 16. The eight nodes include the three sovereign-plane pairs and the additional Celestial-plane pair. If the Celestial frame remains a construction scaffold rather than a sovereign plane, the distinction should remain visible in the registry.
 
-The other unusual property is the Wayeb pole's reported equal angular separation from the north poles of all three sovereign planes: approximately . If reproduced from the underlying coordinates, that makes its orientation a specific geometric construction rather than an arbitrary fourth direction.
+The other unusual property is the Wayeb pole's reported equal angular separation from the north poles of all three sovereign planes: approximately the same value across them. If reproduced from the underlying coordinates, that makes its orientation a specific geometric construction rather than an arbitrary fourth direction.
 
 The chambers add a second kind of reference. Their stated depths are equal in magnitude to their latitudes in all three sovereign frames. However, the source also reports that their sky values do not yet have a recovered formula. I would keep those values in the source record without inventing a derivation.
+
+## 9. Final editorial position
+
+The framework should remain geometry-first. The broad aim is not to suppress interpretive layers, but to keep them from silently altering the underlying measurements. If a proposed addition can be traced to documented inputs, remains consistent with the sovereign geometry, and does not change the identity or computational meaning of existing results, it has a legitimate place in the architecture. If it cannot, it should remain clearly labelled as interpretive, provisional, or exploratory.
+
+This keeps the architecture explicit and auditable while still leaving room for later extension.
